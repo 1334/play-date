@@ -3,7 +3,7 @@ import GoogleLoginButton from 'react-google-login-button';
 import { LoginButton } from 'react-facebook';
 import './auth.css';
 import { PostData } from './postdata';
-import { GoogleToken } from '../../../config';
+import { googleToken } from '../../../config';
 import AddIcon from '@material-ui/icons/Add';
 import Button from '@material-ui/core/Button';
 import Tooltip from '@material-ui/core/Tooltip';
@@ -76,7 +76,7 @@ export class AuthComponent extends React.Component {
         {!this.state.auth ? (
           <React.Fragment>
             <GoogleLoginButton
-              googleClientId={GoogleToken}
+              googleClientId={googleToken}
               buttonText="LOGIN WITH GOOGLE"
               onLoginSuccess={this.responseGoogle}
               onLoginFailure={this.responseGoogle}

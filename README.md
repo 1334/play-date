@@ -2,7 +2,7 @@
 # Play Dates
 
 <p>
-Play Dates makes it easy to find activities that are going on for kids near you.  You can filter by times, locations, price or age to find the best event for your kids. Alternatively, if you are hosting an event, you can create your own play date.
+Play Dates makes it easy to find activities that are going on for kids near you.  You can filter by time, locations, price or age to find the best event for your kids. Alternatively, if you are hosting an event, you can create your own play date.
 </p>
 
 ## Table of contents
@@ -17,12 +17,12 @@ Play Dates makes it easy to find activities that are going on for kids near you.
 ## Screenshots
 
 <p align="center">
-  <img src= "./client/src/assets/Screen Shot 2018-12-11 at 10.13.20.png"/>
+  <img src= "./client/src/assets/first.png"/>
   </p>
   <p align="center">
-  <img src= "./client/src/assets/Screen Shot 2018-12-11 at 10.13.38.png" />   
-<!--   <img src= "./client/src/assets/Screen Shot 2018-12-11 at 10.15.18.png" height="400px"/> -->
+  <img src= "./client/src/assets/second.png" width="70%"/>
   </p>
+
 
 
 ## Getting started
@@ -93,6 +93,17 @@ Finally, migrate the database on your local machine:
 ```bash
 cd server
 npm run recreateDb
+```
+### Social logins 
+
+**Google App:** go to [Google API Console](https://console.developers.google.com/apis/credentials) create app and setup OAuth client ID following [this steps](https://developers.google.com/authorized-buyers/rtb/open-bidder/google-app-guide).
+
+**Facebook App:** go to [Facebook for developers](https://developers.facebook.com/docs/apps/) create app and setup oAuth.
+
+In client/src/config.js 
+```javascript
+export const googleToken = 'your_google_token';
+export const facebookToken = 'your_facebook_token';
 ```
 
 ## Usage
